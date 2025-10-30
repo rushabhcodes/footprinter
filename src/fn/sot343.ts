@@ -13,12 +13,12 @@ export const sot343 = (
     num_pins: 4,
     w: 1.94,
     p: 0.65,
-    pw: 0.40,
+    pw: 0.4,
     pl: 0.65,
     legoutside: true,
   })
-const circuitJson = soicWithoutParsing(parameters)
-log("SOT343", { circuitJson, parameters })
+  const circuitJson = soicWithoutParsing(parameters)
+  log("SOT343", { circuitJson, parameters })
   return {
     circuitJson,
     parameters,
