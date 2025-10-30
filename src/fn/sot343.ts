@@ -18,7 +18,6 @@ export const sot343 = (
     legoutside: true,
   })
   const circuitJson = soicWithoutParsing(parameters)
-  log("SOT343", { circuitJson, parameters })
   return {
     circuitJson,
     parameters,
