@@ -13,6 +13,7 @@ import { quad_def } from "src/fn/quad"
 import { sod_def } from "src/fn/sod123"
 import { soic_def } from "src/fn/soic"
 import { sot23_def } from "src/fn/sot23"
+import { sot343_def } from "src/fn/sot343"
 import { sot363_def } from "src/fn/sot363"
 import { sot563_def } from "src/fn/sot563"
 import { sot723_def } from "src/fn/sot723"
@@ -21,6 +22,7 @@ import { tssop_def } from "src/fn/tssop"
 import { passive_def } from "../passive-fn"
 import { pad_def } from "../../fn/pad"
 import { smtpad_def } from "../../fn/smtpad"
+import { sot } from "src/fn"
 
 export const any_footprinter_def = z.union([
   axial_def,
@@ -37,6 +39,7 @@ export const any_footprinter_def = z.union([
   sod_def,
   soic_def,
   sot23_def,
+  sot343_def,
   sot363_def,
   sot563_def,
   sot723_def,
