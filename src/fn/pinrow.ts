@@ -131,7 +131,10 @@ export const pinrow_def = base_def
         path: ["missing"],
       })
     }
-    if ((data.cyw === undefined) !== (data.cyh === undefined)) {
+    if (
+      (data.cyw === undefined && data.cyh !== undefined) ||
+      (data.cyw !== undefined && data.cyh === undefined)
+    ) {
       ctx.addIssue({
         code: z.ZodIssueCode.custom,
         message: "'cyw' and 'cyh' must be provided together",
